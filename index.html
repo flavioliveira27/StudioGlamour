@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Glamour | Salão de Beleza</title>
+  <meta name="description"
+    content="Studio Glamour - Salão de beleza com serviços de manicure, esmaltação, fibra de vidro, banho de gel, limpeza de pele e podologia. Agende seu horário!" />
+  <meta name="keywords"
+    content="salão de beleza, manicure, esmaltação, fibra de vidro, banho de gel, limpeza de pele, podologia, beleza, estética" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="navbar-logo">
+        <div class="navbar-logo-icon">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="28" stroke="#C17B6E" stroke-width="2" fill="none" />
+            <path d="M30 12C30 12 20 20 20 30C20 35.5 24.5 40 30 40C35.5 40 40 35.5 40 30C40 20 30 12 30 12Z"
+              fill="#C17B6E" opacity="0.3" />
+            <path d="M30 16C30 16 23 22 23 30C23 33.9 26.1 37 30 37C33.9 37 37 33.9 37 30C37 22 30 16 30 16Z"
+              fill="#C17B6E" opacity="0.6" />
+            <circle cx="30" cy="30" r="4" fill="#C17B6E" />
+            <path d="M26 42L30 50L34 42" stroke="#C17B6E" stroke-width="1.5" fill="none" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="navbar-logo-text">
+          Studio Glamour
+          <span>Beleza &amp; Estética</span>
+        </div>
+      </a>
+
+      <ul class="navbar-menu" id="navMenu">
+        <li><a href="#inicio" class="active">Início</a></li>
+        <li><a href="#boas-vindas">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar um horário."
+            class="btn btn-primary navbar-cta" target="_blank" rel="noopener">Agendar Horário</a></li>
+      </ul>
+
+      <button class="navbar-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="inicio">
+    <div class="hero-decor hero-decor-1"></div>
+    <div class="hero-decor hero-decor-2"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Sua beleza,<br><em>Nossa paixão.</em></h1>
+        <p>Confie em sua autoestima e invista em você com o Studio Glamour. Utilizamos técnicas modernas e produtos de
+          alta qualidade para realçar a sua beleza natural.</p>
+        <div class="hero-buttons">
+          <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar um horário." class="btn btn-primary"
+            target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.386 0-4.596-.82-6.336-2.197l-.442-.363-3.07 1.028 1.028-3.07-.363-.442A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+            </svg>
+            Agende seu Horário
+          </a>
+          <a href="#servicos" class="btn btn-outline">Nossos Serviços</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat reveal">
+            <span class="number" data-count="8">0</span>
+            <span class="label">Anos de experiência</span>
+          </div>
+          <div class="hero-stat reveal reveal-delay-1">
+            <span class="number" data-count="500">0</span>
+            <span class="label">Clientes satisfeitas</span>
+          </div>
+          <div class="hero-stat reveal reveal-delay-2">
+            <span class="number" data-count="3500">0</span>
+            <span class="label">Atendimentos realizados</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero.png" alt="Studio Glamour - Mulher com pele perfeita" loading="eager" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WELCOME / BOAS-VINDAS ========== -->
+  <section class="welcome" id="boas-vindas">
+    <div class="container">
+      <span class="section-subtitle reveal">Boas-vindas</span>
+      <h2 class="section-title reveal">A Experiência Estética<br>do <em>Studio Glamour</em></h2>
+      <p class="welcome-intro reveal">Bem-vindo ao nosso espaço pensado para você! Aqui, cada detalhe foi cuidadosamente
+        planejado para oferecer uma experiência única de beleza e bem-estar, em um ambiente acolhedor e sofisticado.</p>
+
+      <div class="welcome-pillars">
+        <div class="welcome-pillar reveal reveal-delay-1">
+          <div class="welcome-pillar-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+          </div>
+          <h3>Exclusividade</h3>
+          <p>Cada tratamento é personalizado de acordo com suas necessidades individuais, garantindo resultados únicos e
+            surpreendentes.</p>
+        </div>
+        <div class="welcome-pillar reveal reveal-delay-2">
+          <div class="welcome-pillar-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z" />
+            </svg>
+          </div>
+          <h3>Autenticidade</h3>
+          <p>Valorizamos a sua beleza natural. Nosso objetivo é realçar o que há de melhor em você, com tratamentos que
+            respeitam sua essência.</p>
+        </div>
+        <div class="welcome-pillar reveal reveal-delay-3">
+          <div class="welcome-pillar-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z" />
+            </svg>
+          </div>
+          <h3>Confiança</h3>
+          <p>Profissionais qualificadas e produtos de alta qualidade para que você se sinta segura e confiante em cada
+            visita ao nosso espaço.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <span class="section-subtitle reveal">Nossos serviços</span>
+      <h2 class="section-title reveal">Conheça nossos<br>tratamentos</h2>
+      <p class="section-description reveal">Oferecemos uma ampla variedade de serviços estéticos para cuidar da sua
+        beleza dos pés à cabeça.</p>
+
+      <div class="services-grid">
+        <!-- Manicure -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-card-image">
+            <img src="images/manicure.png" alt="Serviço de Manicure" loading="lazy" />
+          </div>
+          <div class="service-card-body">
+            <h3>Manicure e Pedicure</h3>
+            <p>Cuidados completos para suas unhas das mãos e dos pés, com acabamento impecável e atenção a cada detalhe.
+            </p>
+            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma Manicure." class="btn btn-primary"
+              target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+              </svg>
+              Agendar Horário
+            </a>
+          </div>
+        </div>
+
+        <!-- Esmaltação -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-card-image">
+            <img src="images/esmaltacao.png" alt="Serviço de Esmaltação" loading="lazy" />
+          </div>
+          <div class="service-card-body">
+            <h3>Esmaltação</h3>
+            <p>Aplicação de esmalte com técnica profissional, oferecendo cores variadas e acabamento perfeito e
+              duradouro.</p>
+            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma Esmaltação." class="btn btn-primary"
+              target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+              </svg>
+              Agendar Horário
+            </a>
+          </div>
+        </div>
+
+        <!-- Fibra de Vidro -->
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-card-image">
+            <img src="images/fibra-vidro.png" alt="Serviço de Fibra de Vidro" loading="lazy" />
+          </div>
+          <div class="service-card-body">
+            <h3>Fibra de Vidro</h3>
+            <p>Alongamento de unhas com fibra de vidro, proporcionando resistência e um visual natural e elegante.</p>
+            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar Fibra de Vidro." class="btn btn-primary"
+              target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+              </svg>
+              Agendar Horário
+            </a>
+          </div>
+        </div>
+
+        <!-- Banho de Gel -->
+        <div class="service-card reveal reveal-delay-4">
+          <div class="service-card-image">
+            <img src="images/banho-gel.png" alt="Serviço de Banho de Gel" loading="lazy" />
+          </div>
+          <div class="service-card-body">
+            <h3>Banho de Gel</h3>
+            <p>Tratamento que fortalece e dá brilho intenso às unhas naturais, com resultado duradouro e profissional.
+            </p>
+            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar um Banho de Gel." class="btn btn-primary"
+              target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+              </svg>
+              Agendar Horário
+            </a>
+          </div>
+        </div>
+
+        <!-- Limpeza de Pele -->
+        <div class="service-card reveal reveal-delay-5">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop&q=80"
+              alt="Serviço de Limpeza de Pele" loading="lazy" />
+          </div>
+          <div class="service-card-body">
+            <h3>Limpeza de Pele</h3>
+            <p>Tratamento facial profundo que remove impurezas, renova a pele e devolve a luminosidade natural do seu
+              rosto.</p>
+            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma Limpeza de Pele."
+              class="btn btn-primary" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+              </svg>
+              Agendar Horário
+            </a>
+          </div>
+        </div>
+
+        <!-- Podologia -->
+        <div class="service-card reveal reveal-delay-6">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=600&h=400&fit=crop&q=80"
+              alt="Serviço de Podologia" loading="lazy" />
+          </div>
+          <div class="service-card-body">
+            <h3>Podologia</h3>
+            <p>Cuidados especializados para a saúde dos seus pés, com profissionais qualificadas em tratamentos
+              podológicos.</p>
+            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma sessão de Podologia."
+              class="btn btn-primary" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+              </svg>
+              Agendar Horário
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials" id="depoimentos">
+    <div class="container">
+      <span class="section-subtitle reveal">Depoimentos</span>
+      <h2 class="section-title reveal">O que nossas<br>clientes dizem?</h2>
+      <p class="section-description reveal">A satisfação de nossas clientes é a nossa maior recompensa. Confira o que
+        elas têm a dizer sobre nós.</p>
+    </div>
+
+    <div class="testimonials-slider">
+      <div class="testimonials-track" id="testimonialsTrack">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+          </div>
+          <p>"Simplesmente maravilhoso! A equipe do Studio Glamour é muito atenciosa e profissional. Minhas unhas
+            ficaram perfeitas com a fibra de vidro. Recomendo de olhos fechados!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-author-avatar">MC</div>
+            <div class="testimonial-author-info">
+              <strong>Maria Clara</strong>
+              <span>Cliente há 3 anos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+          </div>
+          <p>"Fiz a limpeza de pele e o resultado foi incrível! Minha pele ficou renovada e muito mais bonita. O
+            ambiente é super aconchegante e as profissionais são nota 10."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-author-avatar">AS</div>
+            <div class="testimonial-author-info">
+              <strong>Ana Sofia</strong>
+              <span>Cliente há 2 anos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+          </div>
+          <p>"O banho de gel deixou minhas unhas incríveis! Durou muito mais que eu esperava. O Studio Glamour é meu
+            lugar favorito para cuidar da beleza. Não troco por nada!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-author-avatar">JR</div>
+            <div class="testimonial-author-info">
+              <strong>Juliana Ribeiro</strong>
+              <span>Cliente há 1 ano</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+          </div>
+          <p>"A podologia do Studio Glamour é excepcional! Resolvi um problema que me incomodava há meses. Profissionais
+            competentes e muito cuidadosas. Ambiente impecável!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-author-avatar">FL</div>
+            <div class="testimonial-author-info">
+              <strong>Fernanda Lima</strong>
+              <span>Cliente há 4 anos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 5 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+          </div>
+          <p>"Amo a esmaltação do Studio Glamour! As cores são lindíssimas e o acabamento é impecável. Sempre saio de lá
+            me sentindo renovada e mais confiante."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-author-avatar">CP</div>
+            <div class="testimonial-author-info">
+              <strong>Camila Pereira</strong>
+              <span>Cliente há 2 anos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 6 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            </svg>
+          </div>
+          <p>"Faço manicure no Studio Glamour toda semana. O carinho e atenção da equipe são incomparáveis. Meu cantinho
+            de autocuidado, onde sempre me sinto especial!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-author-avatar">BO</div>
+            <div class="testimonial-author-info">
+              <strong>Beatriz Oliveira</strong>
+              <span>Cliente há 5 anos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials-nav">
+      <button id="prevTestimonial" aria-label="Anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+      </button>
+      <button id="nextTestimonial" aria-label="Próximo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <span class="section-subtitle reveal">Dúvidas frequentes</span>
+      <h2 class="section-title reveal">Perguntas<br>Frequentes</h2>
+
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-question">Como posso agendar um horário?</button>
+          <div class="faq-answer">
+            <p>Você pode agendar seu horário diretamente pelo WhatsApp clicando no botão "Agendar Horário" presente em
+              nosso site, ou entrando em contato pelo telefone (11) 99999-9999. Também aceitamos agendamentos
+              presenciais.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question">Quais formas de pagamento vocês aceitam?</button>
+          <div class="faq-answer">
+            <p>Aceitamos pagamento em dinheiro, cartão de débito, cartão de crédito (todas as bandeiras) e PIX. Para sua
+              comodidade, oferecemos diversas opções de pagamento.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question">Quanto tempo dura cada procedimento?</button>
+          <div class="faq-answer">
+            <p>O tempo varia de acordo com o serviço: Manicure (40-60 min), Esmaltação (30-45 min), Fibra de Vidro
+              (1h30-2h), Banho de Gel (1h-1h30), Limpeza de Pele (1h-1h30) e Podologia (40-60 min).</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-3">
+          <button class="faq-question">Os produtos utilizados são de qualidade?</button>
+          <div class="faq-answer">
+            <p>Sim! Trabalhamos exclusivamente com marcas premium e produtos de alta qualidade, garantindo a segurança e
+              saúde das nossas clientes, além de resultados impecáveis e duradouros.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-4">
+          <button class="faq-question">Preciso de um horário marcado ou atendem por ordem de chegada?</button>
+          <div class="faq-answer">
+            <p>Recomendamos que agende seu horário para garantir seu atendimento sem espera. No entanto, atendemos por
+              ordem de chegada caso haja disponibilidade na agenda.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-5">
+          <button class="faq-question">Qual é a política de cancelamento?</button>
+          <div class="faq-answer">
+            <p>Pedimos que nos avise com pelo menos 2 horas de antecedência caso precise cancelar ou reagendar. Isso nos
+              ajuda a organizar a agenda e atender outras clientes que possam estar esperando.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contato">
+    <div class="container">
+      <div class="contact-info">
+        <span class="section-subtitle">Fale conosco</span>
+        <h2 class="section-title">Entre em Contato</h2>
+        <p>Tem alguma dúvida ou deseja saber mais sobre nossos serviços? Entre em contato conosco.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+              </svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Endereço</strong>
+              <span>Rua das Flores, 123 - Centro<br>São Paulo - SP, 01000-000</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+              </svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Telefone</strong>
+              <a href="tel:+5511999999999">(11) 99999-9999</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+              </svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>E-mail</strong>
+              <a href="mailto:contato@studioglamour.com.br">contato@studioglamour.com.br</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z" />
+              </svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Horário de Funcionamento</strong>
+              <span>Seg - Sex: 9h às 19h<br>Sáb: 9h às 17h</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg>
+          </a>
+          <a href="https://wa.me/5511999999999" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741 .981.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <h3>Envie sua Mensagem</h3>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nome completo</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Serviço de Interesse</label>
+            <select id="service" name="service">
+              <option value="">Selecione um serviço</option>
+              <option value="manicure">Manicure</option>
+              <option value="esmaltacao">Esmaltação</option>
+              <option value="fibra-vidro">Fibra de Vidro</option>
+              <option value="banho-gel">Banho de Gel</option>
+              <option value="limpeza-pele">Limpeza de Pele</option>
+              <option value="podologia">Podologia</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" placeholder="Escreva sua mensagem..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+            </svg>
+            Enviar Mensagem
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="navbar-logo-text">
+            Studio Glamour
+            <span>Beleza &amp; Estética</span>
+          </div>
+          <p>Desde 2018, valorizando sua beleza com cuidado, elegância e autoestima.</p>
+          <div class="footer-bottom-socials">
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="https://wa.me/5511999999999" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Endereço</h4>
+          <div class="footer-schedule">
+            <span>Rua das Flores, 123</span>
+            <span>Centro - São Paulo, SP</span>
+            <span>CEP: 01000-000</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Funcionamento</h4>
+          <div class="footer-schedule">
+            <span>Segunda a Sexta: 9h - 19h</span>
+            <span>Sábado: 9h - 17h</span>
+            <span>Domingo: Fechado</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Studio Glamour. Todos os direitos reservados.</p>
+        <p>Created By <a href="www.caviontech.com" target="_blank">CavionTech</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING WHATSAPP ========== -->
+  <div class="whatsapp-float">
+    <span class="whatsapp-tooltip">Agende pelo WhatsApp!</span>
+    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os serviços do Studio Glamour."
+      class="whatsapp-float-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.981.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
