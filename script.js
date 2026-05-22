@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
       whatsappMsg += `Mensagem: ${message}`;
     }
 
-    window.open(`https://wa.me/5511999999999?text=${whatsappMsg}`, '_blank');
+    window.open(`https://wa.me/5561983015775?text=${whatsappMsg}`, '_blank');
     
     // Show success feedback
     const btn = contactForm.querySelector('.btn');
