@@ -181,7 +181,7 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 1005;
   padding: 18px 0;
   background: rgba(253, 245, 239, 0.85);
   backdrop-filter: blur(12px);
@@ -1043,6 +1043,17 @@ h6 {
   font-size: 0.82rem;
 }
 
+.footer-bottom a {
+  color: var(--color-primary-light);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.footer-bottom a:hover {
+  color: var(--color-gold);
+  text-decoration: underline;
+}
+
 .footer-bottom-socials {
   display: flex;
   gap: 12px;
@@ -1125,9 +1136,12 @@ h6 {
 }
 
 @keyframes whatsappFloat {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-8px);
   }
@@ -1137,9 +1151,11 @@ h6 {
   0% {
     box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4), 0 0 0 0 rgba(37, 211, 102, 0.4);
   }
+
   70% {
     box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4), 0 0 0 15px rgba(37, 211, 102, 0);
   }
+
   100% {
     box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4), 0 0 0 0 rgba(37, 211, 102, 0);
   }
@@ -1183,34 +1199,53 @@ h6 {
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 1024px) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
   .hero .container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 0;
   }
 
   .hero-content {
+    display: contents;
+  }
+
+  .hero-content h1 {
     order: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .hero-content p {
+    order: 2;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .hero-stats {
-    justify-content: center;
-  }
-
   .hero-image {
-    order: 0;
+    order: 3;
+    margin: 0 auto 25px;
   }
 
   .hero-image img {
     max-width: 400px;
+  }
+
+  .hero-buttons {
+    order: 4;
+    justify-content: center;
+  }
+
+  .hero-stats {
+    order: 5;
+    justify-content: center;
   }
 
   .services-grid {
@@ -1224,11 +1259,9 @@ h6 {
   .footer-top {
     grid-template-columns: 1fr 1fr;
   }
-}
 
-@media (max-width: 768px) {
-  html {
-    font-size: 15px;
+  .footer-brand {
+    grid-column: 1 / -1;
   }
 
   .navbar-menu {
@@ -1239,9 +1272,10 @@ h6 {
     height: 100vh;
     background: var(--color-bg-cream);
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 25px;
-    padding: 40px;
+    padding: 100px 40px 40px;
     box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
     transition: right 0.4s ease;
     z-index: 1001;
@@ -1267,19 +1301,66 @@ h6 {
   .navbar-toggle.open span:nth-child(3) {
     transform: rotate(-45deg) translateY(-5px) translateX(5px);
   }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .hero-stat {
+    text-align: center;
+  }
+
+  .hero-stat:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+
 
   .hero-content h1 {
     font-size: 2.6rem;
   }
 
-  .hero-stats {
+  .hero-buttons {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto 40px;
     gap: 15px;
   }
 
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
   .hero-stat {
-    width: 200px;
+    width: 100%;
+    text-align: center;
   }
 
   .section-title {
@@ -1311,8 +1392,8 @@ h6 {
   }
 
   .footer-top {
-    grid-template-columns: 1fr;
-    gap: 35px;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 20px;
   }
 
   .footer-bottom {
@@ -1344,17 +1425,6 @@ h6 {
 @media (max-width: 480px) {
   .hero-content h1 {
     font-size: 2.2rem;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-buttons .btn {
-    width: 100%;
-    max-width: 280px;
-    justify-content: center;
   }
 
   .contact-form-wrapper {
